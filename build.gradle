@@ -1,18 +1,18 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()  // Changed from jcenter
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.2"
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.5'
+        // Removed bintray plugin
     }
 }
 
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()  // Changed from jcenter
     }
 }
 
