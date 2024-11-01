@@ -1,10 +1,7 @@
 plugins {
     id 'com.android.library'
-    id 'maven-publish'  // Added this
+    id 'maven-publish'
 }
-
-// Remove this line as we'll no longer use bintray
-// apply from: 'bintray.gradle'
 
 android {
     compileSdkVersion 29
@@ -13,7 +10,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
-        versionName project.ext.versionName
+        versionName "1.0.1"  // Direct version number instead of reference
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
@@ -33,7 +30,7 @@ afterEvaluate {
                 
                 groupId = 'com.github.Insider77'
                 artifactId = 'CupertinoSwitch'
-                version = project.ext.versionName  // Using the same version name
+                version = '1.0.1'  // Direct version number instead of reference
             }
         }
     }
